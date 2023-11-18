@@ -1,0 +1,35 @@
+<div class="author">
+    <h1 class="author__heading">Welcome to JSNest</h1>
+    <p class="author__body">Your ultimate destination for JavaScript and Node.js enthusiasts, offering insightful tutorials, coding resources, and a vibrant community to empower developers at every skill level.</p>
+  </div>
+  
+  <video muted autoplay src="/img/Video.mp4"  class="hero-image" width="981" height="528"></video>
+  
+  <section class="articles"> 
+    <h2 class="articles__heading"><b>Latest Posts</b></h2>
+
+    <ul class="article-ul">
+
+      <% data.forEach(post => { %>
+       
+      
+      <li>
+        <a href="/post/<%= post._id %>">
+          <span><%= post.title %></span>
+          <span class="article-list__date"><%= post.createdAt.toDateString() %></span>
+        </a>
+      </li>
+
+      <% }) %>
+
+    </ul>
+    
+    <% if (nextPage !== null) { %>
+      <a href="/?page=<%= nextPage %>" class="pagination">&it; View Older Posts</a>
+    <% } %>
+
+ 
+    
+
+
+  </section>
