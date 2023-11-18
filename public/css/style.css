@@ -296,7 +296,13 @@ img {
 
 
 .article {
+  padding: 30px 40px;
   white-space: pre-wrap;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  backdrop-filter: blur(100px);
+  box-shadow: 0 0  10px rgba(0, 0, 0, .3);
+  font-weight: 700;
 }
 
  
