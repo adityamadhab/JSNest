@@ -28,4 +28,4 @@ For any queries, reach out at:
 
 ## License
 
-The project is licenced under [MIT](https://choosealicense.com/licenses/mit/)
+The project is licenced under [MIT License](LICENSE)
